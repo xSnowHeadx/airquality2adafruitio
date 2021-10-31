@@ -351,16 +351,16 @@ void loop()
 			}
 			if (state.co2.mcount)
 			{
-				a_co2->save((uint16_t) (state.co2.avg / state.co2.mcount));
+				a_co2->save(state.co2.avg / state.co2.mcount);
 			}
 			if (state.pm25.mcount)
 			{
-				a_pm25->save((uint16_t) (state.pm25.avg / state.pm25.mcount));
+				a_pm25->save(state.pm25.avg / state.pm25.mcount);
 			}
 #if USE_BMP
 			if (state.pressure.mcount)
 			{
-				a_pressure->save((uint16_t) (state.pressure.avg / state.pressure.mcount));
+				a_pressure->save(state.pressure.avg / state.pressure.mcount);
 			}
 #endif
 			Serial.println("Saved values to io.adafruit.com");

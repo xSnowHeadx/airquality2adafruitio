@@ -32,3 +32,8 @@
 *.app
 /Release/
 /sloeber.ino.cpp
+/.cproject
+/.project
+/.settings/
+/.sproject
+/accounts.txt
