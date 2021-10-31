@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+/Release/
+/sloeber.ino.cpp
